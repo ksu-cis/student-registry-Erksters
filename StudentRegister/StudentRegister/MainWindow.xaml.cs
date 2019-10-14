@@ -29,7 +29,7 @@ namespace StudentRegister
             students = new ObservableCollection<Student>();
             students.Add(new Student("Jack", "Nimble"));
             students.Add(new Student("Mary", "Contrary"));
-
+            SelectedStudent.Content = students;
             StudentList.ItemsSource = students; 
         }
 
